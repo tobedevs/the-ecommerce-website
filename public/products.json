@@ -1,0 +1,514 @@
+[
+  {
+    "id": 1,
+    "name": "Essential Cotton T-Shirt",
+    "description": "Soft, breathable 100% cotton crew-neck t-shirt. Perfect for everyday casual wear. Pre-shrunk and comfortable fit.",
+    "colors": ["Black", "White", "Navy"],
+    "category": "Shoes",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "https://images.unsplash.com/photo-1581655353564-df123a1eb820",
+      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990"
+    ],
+    "reviews": [
+      {
+        "author": "Sarah K.",
+        "rating": 5,
+        "comment": "Super soft and true to size. Great basic tee!"
+      },
+      {
+        "author": "Mike T.",
+        "rating": 4,
+        "comment": "Washes well, no shrinking. Will buy more colors."
+      },
+      {
+        "author": "Emma R.",
+        "rating": 5,
+        "comment": "Perfect fit, very comfortable for daily use."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Oversized Knit Pullover Sweater",
+    "description": "Cozy, relaxed-fit chunky knit sweater with long sleeves and ribbed cuffs. Perfect for layering in fall and winter — soft and warm without being bulky.",
+    "colors": ["Cream", "Taupe", "Forest Green"],
+    "category": "Bags",
+    "sizes": ["S", "M", "L", "XL"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/729dbe15-2fde-4026-9718-b3259ca490d2.__CR0,0,600,450_PT0_SX600_V1___.jpg",
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/cefeda94-00e9-4b93-b834-f6349754c58e.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/c9636aff-0776-42ae-bf0d-1d72e9143415.__CR0,0,600,450_PT0_SX600_V1___.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Hannah B.",
+        "rating": 5,
+        "comment": "So soft and stylish — my new favorite cozy sweater!"
+      },
+      {
+        "author": "Claire M.",
+        "rating": 4,
+        "comment": "Runs a bit large, but that's the look I wanted. Warm and comfy."
+      },
+      {
+        "author": "Julia R.",
+        "rating": 5,
+        "comment": "Great quality knit, holds shape after washing."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Wireless Noise-Cancelling Headphones",
+    "description": "Premium over-ear headphones with active noise cancellation, 40-hour battery life, clear sound, and built-in mic for calls.",
+    "colors": ["White", "Black", "Midnight Blue"],
+    "category": "Shoes",
+    "sizes": ["One Size"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "https://images.unsplash.com/photo-1613040809024-b4ef374e73c2",
+      "https://images.unsplash.com/photo-1585298723682-7115561c51e7"
+    ],
+    "reviews": [
+      {
+        "author": "Alex C.",
+        "rating": 5,
+        "comment": "Noise cancellation is insane — perfect for flights!"
+      },
+      {
+        "author": "Sophia B.",
+        "rating": 5,
+        "comment": "Sound quality is rich, battery lasts forever."
+      },
+      {
+        "author": "Ryan K.",
+        "rating": 4,
+        "comment": "Comfortable for long sessions, great value."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Minimalist Leather Wallet",
+    "description": "Slim bifold wallet made from genuine leather. Holds 8-10 cards, cash slot, and minimalist design for front-pocket carry.",
+    "colors": ["Whiskey Brown", "Black", "Dark Brown"],
+    "category": "Bags",
+    "sizes": ["One Size"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1627123424574-724758594e93",
+      "https://images.unsplash.com/photo-1606501407787-47a5ed58763c",
+      "https://images.unsplash.com/photo-1583396660636-097313e5876e"
+    ],
+    "reviews": [
+      {
+        "author": "Ethan W.",
+        "rating": 5,
+        "comment": "Super slim yet holds everything I need. Love it!"
+      },
+      {
+        "author": "Isabella G.",
+        "rating": 5,
+        "comment": "Quality leather, ages beautifully."
+      },
+      {
+        "author": "Liam H.",
+        "rating": 4,
+        "comment": "Perfect size for everyday use, no bulk."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Performance Running Sneakers",
+    "description": "Lightweight running shoes with responsive cushioning, breathable mesh upper, and durable rubber outsole. Great for road running.",
+    "colors": ["Black/Red", "Grey/Blue", "White/Black"],
+    "category": "Shoes",
+    "sizes": ["US 7–13 (Men)", "US 5–11 (Women)"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+    ],
+    "reviews": [
+      {
+        "author": "Noah S.",
+        "rating": 5,
+        "comment": "Super comfy and bouncy — best run shoes yet."
+      },
+      {
+        "author": "Ava J.",
+        "rating": 4,
+        "comment": "Great grip and support for longer runs."
+      },
+      {
+        "author": "Lucas D.",
+        "rating": 5,
+        "comment": "Lightweight and true to size."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Slim 10000mAh Portable Power Bank",
+    "description": "Ultra-slim, lightweight power bank with built-in cables for easy charging. 10000mAh capacity, fast charging support, and pocket-friendly design for travel or daily use.",
+    "colors": ["Black", "White", "Blue"],
+    "category": "Shoes",
+    "sizes": ["One Size"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://m.media-amazon.com/images/I/61Fxxson0OL._AC_UF894,1000_QL80_.jpg",
+      "https://i5.walmartimages.com/seo/Anker-PowerCore-Slim-10000-Portable-Charger-10000mAh-Ultra-Slim-Power-Bank-PowerIQ-Charging-Black_5505ea03-47c5-4396-b554-b6c0907f9d6e.7d1b1314069261e6da7ee33c41def29e.jpeg",
+      "https://m.media-amazon.com/images/I/81tqFlrAOeL._AC_UF894,1000_QL80_.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Max T.",
+        "rating": 5,
+        "comment": "Super thin and charges my phone twice — perfect for pockets!"
+      },
+      {
+        "author": "Sara L.",
+        "rating": 5,
+        "comment": "Built-in cables are a game changer, no extra wires needed."
+      },
+      {
+        "author": "Evan K.",
+        "rating": 4,
+        "comment": "Charges fast, but could be a tad slimmer."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Stainless Steel Smartwatch",
+    "description": "Modern smartwatch with heart rate monitoring, fitness tracking, notifications, and 1.4\" AMOLED display. Water-resistant up to 50m.",
+    "colors": ["Black Strap", "Silver", "Rose Gold"],
+    "category": "Bags",
+    "sizes": ["One Size (adjustable strap)"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://images.unsplash.com/photo-1508057198894-247b23fe5ade",
+      "https://images.unsplash.com/photo-1617049047140-4e9a4d0e0e1c",
+      "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351"
+    ],
+    "reviews": [
+      {
+        "author": "Zoe N.",
+        "rating": 5,
+        "comment": "Battery life is impressive, sleek design."
+      },
+      {
+        "author": "Logan P.",
+        "rating": 4,
+        "comment": "Tracks everything I need — workouts, sleep, steps."
+      },
+      {
+        "author": "Harper M.",
+        "rating": 5,
+        "comment": "Great value for a smartwatch."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Insulated Stainless Steel Water Bottle (20oz)",
+    "description": "Double-wall vacuum insulated bottle keeps drinks cold for 24 hours or hot for 12. Leak-proof lid, durable stainless steel, and fits most cup holders.",
+    "colors": ["Silver", "Matte Black", "Ocean Blue"],
+    "category": "Shoes",
+    "sizes": ["20oz"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://m.media-amazon.com/images/I/91bNd13NkhL.jpg",
+      "https://m.media-amazon.com/images/I/51+6XjKtmXL._SY350_PKmb-play-button-overlay_.jpg",
+      "https://www.lazerdesigns.com/Merchant2/graphics/00000001/prod/WB201.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Ryan P.",
+        "rating": 5,
+        "comment": "Keeps ice cold all day — best bottle I've owned."
+      },
+      {
+        "author": "Emma S.",
+        "rating": 5,
+        "comment": "No leaks, stylish, and easy to clean."
+      },
+      {
+        "author": "Liam D.",
+        "rating": 4,
+        "comment": "Great insulation, but lid could be easier to open one-handed."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Elegant Casual Blouse",
+    "description": "Lightweight, flowy blouse with subtle details and comfortable fit. Ideal for office-to-evening transitions or smart-casual looks.",
+    "colors": ["Ivory", "Soft Pink", "Navy"],
+    "category": "Bags",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://cdn.mos.cms.futurecdn.net/Z93RZEcc3o8cJKWmG9qcAR.jpg",
+      "https://i.etsystatic.com/18586336/r/il/224d26/3388866503/il_570xN.3388866503_76vq.jpg",
+      "https://cdn.mos.cms.futurecdn.net/P49wPn78qmkZTgxJfZoV55.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Lily M.",
+        "rating": 5,
+        "comment": "So elegant and versatile — I wear it everywhere!"
+      },
+      {
+        "author": "Rachel T.",
+        "rating": 4,
+        "comment": "Beautiful fabric, washes nicely without wrinkling much."
+      },
+      {
+        "author": "Sophie L.",
+        "rating": 5,
+        "comment": "Fits perfectly, feels luxurious for the price."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "True Wireless Earbuds",
+    "description": "Compact true wireless earbuds with crisp sound, touch controls, noise isolation, and up to 30 hours total battery life with charging case.",
+    "colors": ["Matte Black", "Pure White", "Graphite"],
+    "category": "Shoes",
+    "sizes": ["One Size"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://allthevybz.com/cdn/shop/files/allthevybz-image18.png?v=1733995954",
+      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6578/6578320cv11d.jpg;maxHeight=1920;maxWidth=900?format=webp",
+      "https://i.ytimg.com/vi/55vktvvxFNY/hqdefault.jpg?v=6492679b"
+    ],
+    "reviews": [
+      {
+        "author": "Jordan K.",
+        "rating": 5,
+        "comment": "Sound is amazing and the battery lasts all day!"
+      },
+      {
+        "author": "Taylor R.",
+        "rating": 5,
+        "comment": "Great fit, no falling out during workouts."
+      },
+      {
+        "author": "Casey P.",
+        "rating": 4,
+        "comment": "Solid value — pairing is instant and reliable."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Urban Laptop Backpack",
+    "description": "Durable, water-resistant backpack with padded laptop compartment (up to 15.6\"), multiple pockets, and comfortable straps for daily commute or travel.",
+    "colors": ["Black", "Charcoal Grey", "Olive Green"],
+    "category": "Bags",
+    "sizes": ["One Size"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://cdn.thewirecutter.com/wp-content/media/2022/12/laptopbackpacks-2048px-6828.jpg?auto=webp&quality=75&width=1024",
+      "https://m.media-amazon.com/images/I/610GNb4CT8L._AC_UY1000_.jpg",
+      "https://d1nymbkeomeoqg.cloudfront.net/photos/28/92/410685_3053_XXL.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Alex V.",
+        "rating": 5,
+        "comment": "Perfect size, tons of organization — my new daily bag."
+      },
+      {
+        "author": "Morgan S.",
+        "rating": 4,
+        "comment": "Sturdy build and laptop protection is excellent."
+      },
+      {
+        "author": "Drew H.",
+        "rating": 5,
+        "comment": "Comfortable even when fully loaded."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Classic Aviator Sunglasses",
+    "description": "Timeless aviator-style sunglasses with UV400 protection, lightweight metal frame, and polarized lenses for reduced glare.",
+    "colors": ["Gold Frame / Black Lens", "Silver Frame / Green Lens", "Rose Gold Frame / Gradient"],
+    "category": "Shoes",
+    "sizes": ["One Size"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://m.media-amazon.com/images/I/61ury5jIkaL._AC_UY1000_.jpg",
+      "https://m.media-amazon.com/images/I/61i3-urfrOL._AC_UY1000_.jpg",
+      "https://m.media-amazon.com/images/I/51TTs3poZ7L._AC_UY1000_.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Chris N.",
+        "rating": 5,
+        "comment": "Look great and actually block the sun well."
+      },
+      {
+        "author": "Jamie E.",
+        "rating": 5,
+        "comment": "Stylish classic design, very durable."
+      },
+      {
+        "author": "Pat L.",
+        "rating": 4,
+        "comment": "Good polarization, no distortion."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Eco-Friendly Yoga Mat",
+    "description": "Non-slip, cushioned yoga mat made from sustainable materials. Thick enough for comfort, lightweight and easy to roll up.",
+    "colors": ["Vivid Teal", "Coral Pink", "Deep Purple"],
+    "category": "Bags",
+    "sizes": ["Standard (68\" x 24\")"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://media.istockphoto.com/id/1495030522/photo/pink-colored-yoga-mats-rolled-up-on-shelves-in-the-studio.jpg?s=612x612&w=0&k=20&c=gdEWRYOti1CeJusS5Y2JPsP8_aVjOAgeyjEitTvgZyk=",
+      "https://thumbs.dreamstime.com/b/colorful-tie-dye-yoga-mat-rolled-up-close-vibrant-swirls-blue-green-pink-white-fitness-accessory-experience-your-practice-401278196.jpg",
+      "https://thumbs.dreamstime.com/b/colorful-yoga-mats-neatly-rolled-arranged-wooden-floor-concept-fitness-accessories-exercise-wellness-home-workout-327174994.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Zara B.",
+        "rating": 5,
+        "comment": "Grip is fantastic — no slipping during flows."
+      },
+      {
+        "author": "Nadia K.",
+        "rating": 5,
+        "comment": "Love the thickness and vibrant colors!"
+      },
+      {
+        "author": "Reese M.",
+        "rating": 4,
+        "comment": "Lightweight and easy to carry to class."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Portable USB Blender",
+    "description": "Compact, rechargeable blender perfect for smoothies, protein shakes, and travel. USB-C charging and powerful blades for quick blending.",
+    "colors": ["Black", "Mint Green", "Rose Gold"],
+    "category": "Shoes",
+    "sizes": ["One Size (450ml)"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://m.media-amazon.com/images/I/516nPY5GreS._AC_UF894,1000_QL80_.jpg",
+      "https://m.media-amazon.com/images/I/61Ga-aSFtVL._AC_UF894,1000_QL80_.jpg",
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/4da1f762-16de-484f-aea3-989225a15a09.__CR0,0,1940,1200_PT0_SX970_V1___.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Kai W.",
+        "rating": 5,
+        "comment": "Blends frozen fruit smoothly — game changer for travel!"
+      },
+      {
+        "author": "Lena P.",
+        "rating": 4,
+        "comment": "Battery lasts multiple uses, easy to clean."
+      },
+      {
+        "author": "Theo R.",
+        "rating": 5,
+        "comment": "Perfect size for desk or gym bag."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Oversized Cozy Hoodie",
+    "description": "Ultra-soft, relaxed-fit hoodie with dropped shoulders and kangaroo pocket. Ideal for lounging or casual streetwear looks.",
+    "colors": ["Heather Grey", "Pastel Blue", "Black"],
+    "category": "Bags",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://i.etsystatic.com/24048626/r/il/0e0614/6723104553/il_570xN.6723104553_mki0.jpg",
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/4ed52176-ca4a-41f8-9dbc-1b6988e31000.__CR0,0,600,450_PT0_SX600_V1___.jpg",
+      "https://i.etsystatic.com/54717434/r/il/41dfa8/7416489359/il_340x270.7416489359_fr8h.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Riley J.",
+        "rating": 5,
+        "comment": "So comfy — my new go-to for cozy days."
+      },
+      {
+        "author": "Avery C.",
+        "rating": 5,
+        "comment": "Oversized fit is perfect, super soft fleece."
+      },
+      {
+        "author": "Quinn D.",
+        "rating": 4,
+        "comment": "Holds shape after washing — great quality."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Fast Wireless Charging Pad",
+    "description": "Sleek 15W wireless charger compatible with iPhone, Samsung, and other Qi-enabled devices. LED indicator and non-slip surface.",
+    "colors": ["Black", "White", "Dark Grey"],
+    "category": "Bags",
+    "sizes": ["One Size"],
+    "price": 24.99,
+    "currency": "USD",
+    "images": [
+      "https://m.media-amazon.com/images/I/71tOjtA9LkL.jpg",
+      "https://m.media-amazon.com/images/I/61ZLBbfz1aL._AC_UF894,1000_QL80_.jpg",
+      "https://m.media-amazon.com/images/I/61uwx0XZ-tL._AC_UF894,1000_QL80_.jpg"
+    ],
+    "reviews": [
+      {
+        "author": "Parker L.",
+        "rating": 5,
+        "comment": "Charges quickly and looks clean on the desk."
+      },
+      {
+        "author": "Samir H.",
+        "rating": 5,
+        "comment": "Works perfectly with phone case on."
+      },
+      {
+        "author": "Ellis G.",
+        "rating": 4,
+        "comment": "Reliable and no overheating issues."
+      }
+    ]
+  }
+]
