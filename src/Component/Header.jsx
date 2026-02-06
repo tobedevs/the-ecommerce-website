@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <div className="flex flex-col lg:flex-row items-center bg-[url('navbar.jpg')] bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[#00000080] w-full max-w-250 h-auto lg:h-80 border rounded-3xl mx-auto mt-7.5">
+    <div className="flex flex-col lg:flex-row items-center bg-[url('./navbar.jpg')] bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[#00000080] w-full max-w-250 h-auto lg:h-80 border rounded-3xl mx-auto mt-7.5">
 
       <div className="flex flex-col justify-center items-center text-center w-full lg:w-158.75 h-auto lg:h-40 gap-3 lg:gap-4 mx-auto px-4 lg:px-0 py-6 lg:py-0">
 
@@ -17,7 +17,7 @@ export function Header() {
             placeholder="Find products"
           />
           <img
-            src="/my-e-commerce-website/MagnifyingGlass.svg"
+            src="./MagnifyingGlass.svg"
             alt=""
             className="cursor-pointer w-4 h-4 sm:w-5 sm:h-5 absolute top-1/2 transform -translate-y-1/2 left-2.5"
           />

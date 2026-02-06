@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useCart } from "../AppContext/CartContext";
 import { useProducts } from "../AppContext/ProductContext";
 import toast from "react-hot-toast";
@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 export function SideBar({ onClose, isOpen }) {
   const { selectedProduct } = useProducts()
   const { cart, totalUniqueItems, remove, updateQuantity } = useCart();
-  const [isItemAdded] = useState(cart.length > 0);
+  const [isItemAdded, setIsItemAdded] = useState(cart.length > 0);
   const totalPrice = cart.reduce((total, item) => {
     return total + (Number(selectedProduct.price) * Number(item.quantity || 1));
   }, 0);
@@ -20,10 +20,16 @@ export function SideBar({ onClose, isOpen }) {
     e.stopPropagation();
   };
 
-  return (
-    <div onClick={overlayClose} className={`fixed top-0 left-0 z-50 w-full h-screen bg-[#00000080] transition-opacity duration-300 ease-in-out ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
+  useEffect(() => {
+    // This runs every time cart changes
+    setIsItemAdded(cart.length > 0);
+  }, [cart]);
 
-      <div onClick={childClick} className={`fixed top-0 h-screen bg-white z-100 w-full sm:w-[80%] lg:w-115 right-0 sm:left-[20%] lg:left-[64%] transform transition-transform duration-1000 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
+
+  return (
+    <div onClick={overlayClose} className={`fixed top-0 left-0 z-50 w-full h-dvh bg-[#00000080] transition-opacity duration-300 ease-in-out ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
+
+      <div onClick={childClick} className={`fixed top-0 h-screen bg-white z-100 w-full sm:w-[70%] lg:w-115 right-0 sm:left-[35%] lg:left-[64%] transform transition-transform duration-1000 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
 
         <div className="flex justify-between border-b border-[#E8E8E8] py-5 px-8 w-full">
           <div className="flex gap-1">
@@ -37,7 +43,7 @@ export function SideBar({ onClose, isOpen }) {
 
           <button onClick={onClose} className="cursor-pointer">
             <img
-              src="/my-e-commerce-website/X (1).svg"
+              src="./X (1).svg"
               className="w-4 h-4 bg-[#BABABA]/50 border-0 rounded-full"
             />
           </button>
@@ -114,21 +120,27 @@ export function SideBar({ onClose, isOpen }) {
                       remove(item.id, item.color, item.sizes)
                     }}
                       className="cursor-pointer absolute sm:right-[10%] right-0 bottom-3 p-2 text-gray-500 hover:text-red-600 transition-colors">
-                      <img src="/my-e-commerce-website/Vector (1).svg" alt="" className="w-5 h-5" />
+                      <img src="./Vector (1).svg" alt="" className="w-5 h-5" />
                     </button>
 
                   </div>
 
-                  <div className="fixed bottom-0 right-[-12%] sm:right-0 w-114.5 bg-white py-4 border-t border-[#E8E8E8] px-8">
-                    <div className="px-8 w-full flex flex-col h-18 gap-6">
-                      <div className="flex justify-between w-full">
+                  <div className="fixed bottom-0 left-0 right-0 bg-white py-6 border-t border-[#E8E8E8] sm:left-0 sm:right-5 lg:w-109 md:w-130">
+                    <div className="px-6 sm:px-8 flex flex-col gap-5">
+                      <div className="flex justify-between items-center">
                         <p className="text-[#1A1A1A] text-[16px]">Estimated total</p>
                         <p className="text-[#1A1A1A] text-[16px]">${totalPrice}</p>
                       </div>
-                      <p className="text-[#767676] text-[14px] text-center">Taxes and shipping calculated at checkout</p>
+
+                      <p className="text-[#767676] text-[14px] text-center">
+                        Taxes and shipping calculated at checkout
+                      </p>
                     </div>
-                    <div className="w-full flex justify-center">
-                      <button className="cursor-pointer w-80 sm:w-full py-5 px-8 bg-[#080808] text-white font-bold text-[15px] sm:text-[16px] rounded-2xl">
+
+                    <div className="mt-6 px-6 sm:px-8">
+                      <button
+                        className="w-full  max-w-dvh mx-auto py-4 sm:py-5 px-8 bg-[#080808] text-white font-bold text-[15px] sm:text-[16px] rounded-2xl block"
+                      >
                         Proceed to checkout
                       </button>
                     </div>

@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import { useProducts } from "../AppContext/ProductContext";
-const baseUrl = import.meta.env.BASE_URL;
 
 const Box = [
   {
     id: 1,
     text: "All",
-    bgcolor: "#D1D1D1",   
+    bgcolor: "#D1D1D1",
     color: "#767676",
     category: "All",
   },
@@ -45,15 +44,22 @@ export function Main() {
     }
   };
 
+  const handleClick = (items) => {
+    setSelectedProduct(items);
+  };
+
   useEffect(() => {
-    fetch(`${baseUrl}/products.json`)
+    fetch('/products.json')
       .then((res) => res.json())
       .then((data) => {
         setItems(data);
         setAllItems(data);
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch((error) => {
+        console.error("Error fetching products:", error);
+        setLoading(false);
+      });
   }, []);
 
   if (loading) return <div className="text-center">Loading...</div>;
