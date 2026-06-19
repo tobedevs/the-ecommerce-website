@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const CartContext = createContext();
 
-const CART_STORAGE_KEY = 'my-cart-items'; // you can change this name
+const CART_STORAGE_KEY = 'my-cart-items';
 
 export function CartProvider({ children }) {
   const [cart, setCart] = useState(() => {
