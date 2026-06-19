@@ -1,41 +1,52 @@
 import React, { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
-import { useProducts } from '../AppContext/ProductContext';
+import { useParams} from 'react-router-dom';
 import { useCart } from '../AppContext/CartContext';
+import { useFetchedProducts } from '../AppContext/FetchProductContext';
 
 export default function ProductPage() {
-  const { selectedProduct } = useProducts();
+  const { products } = useFetchedProducts()
+  const { id } = useParams();
   const [imageIndex, setImageIndex] = useState(0);
   const [colorIndex, setColorIndex] = useState(-1);
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState(null);
   const [showSizes, setShowSizes] = useState(false);
   const { add } = useCart();
-
+  
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
+  
+  const product = products.find(
+    (item) => item.firebaseId === id
+  );
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-
+    
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  // Auto-select first size when product loads/changes
+  
+  
+  
   useEffect(() => {
-    if (selectedProduct?.sizes?.length > 0 && selectedSize === null) {
-      setSelectedSize(selectedProduct.sizes[0]);
+    if (product?.sizes?.length > 0 && selectedSize === null) {
+      setSelectedSize(product.sizes[0]);
     }
-  }, [selectedProduct]);
-
-  if (!selectedProduct) {
-    return <p className="my-9">Error Loading Product...</p>;
+  }, [product, selectedSize]);
+  const availableSizes = product?.sizes || [];
+  if (!products.length) {
+    return <p>Loading...</p>
+  }
+  if (!product) {
+    return <P>Product not found</P>
   }
 
-  const largeImage = selectedProduct.images?.[imageIndex] || selectedProduct.images?.[0];
-  const availableSizes = selectedProduct.sizes || [];
+  /*if (!selectedProduct) {
+    toast.error("Product not found");
+  }*/
+
 
   const handleImageClick = (index) => {
     setImageIndex(index);
@@ -56,12 +67,12 @@ export default function ProductPage() {
     <div className="flex flex-col w-[85%] m-auto lg:flex-row gap-8 lg:gap-20">
       <div className="w-full lg:w-125 h-auto lg:h-145 gap-6 flex flex-col">
         <img
-          src={largeImage}
-          alt={selectedProduct.name || "Product image"}
+          src={product?.images[imageIndex]}
+          alt={product?.name || "Product image"}
           className="w-full lg:w-125 rounded-[20px] h-87.5 lg:h-125 object-cover"
         />
         <div className="flex flex-wrap justify-start gap-2 lg:justify-center">
-          {selectedProduct.images?.slice(0, 3).map((img, idx) => (
+          {product?.images?.slice(0, 3).map((img, idx) => (
             <button
               key={idx}
               onClick={() => handleImageClick(idx)}
@@ -75,9 +86,9 @@ export default function ProductPage() {
       </div>
 
       <div className="flex flex-col gap-6 lg:gap-8">
-        <h2 className="text-2xl lg:text-[32px] font-bold">{selectedProduct.name}</h2>
+        <h2 className="text-2xl lg:text-[32px] font-bold">{product?.name}</h2>
         <p className="text-[14px] lg:text-[18px] font-bold">
-          ${selectedProduct.price} {selectedProduct.currency}
+          ${product?.price} {product?.currency}
         </p>
 
         <div className="flex flex-col gap-3">
@@ -112,7 +123,7 @@ export default function ProductPage() {
             <option value={-1} disabled>
               Select a colour
             </option>
-            {selectedProduct.colors?.map((color, idx) => (
+            {product?.colors?.map((color, idx) => (
               <option key={idx} value={idx}>
                 {color}
               </option>
@@ -158,8 +169,8 @@ export default function ProductPage() {
 
         <button
           onClick={() => {
-            let selectedColor = selectedProduct.colors[colorIndex];
-            let selectedImage = selectedProduct.images[imageIndex];
+            let selectedColor = product?.colors[colorIndex];
+            let selectedImage = product?.images[imageIndex];
             toast.success("Added to cart!");
             if (colorIndex === -1) {
               alert("Please select a color");
@@ -174,7 +185,7 @@ export default function ProductPage() {
               return;
             }
 
-            add(selectedProduct.id, selectedColor, quantity, selectedImage, selectedProduct.name, selectedSize, selectedProduct.price);
+            add(product?.firebaseId, selectedColor, quantity, selectedImage, product?.name, selectedSize, product?.price);
           }}
           className="cursor-pointer mt-8 w-full sm:w-140 h-16 border-0 border-[#0000000D] rounded-2xl py-5 px-8 bg-[#080808] font-bold text-[16px] text-[#FFFFFF]"
         >
@@ -188,7 +199,7 @@ export default function ProductPage() {
             <p className="p-2 border-b-[#484848] text-[16px] text-[#1A1A1A]">Reviews</p>
           </div>
           <p className="w-full sm:w-140 font-normal text-[14px] text-[#A3A3A3]">
-            {selectedProduct.description}
+            {product?.description}
           </p>
         </div>
       </div>
