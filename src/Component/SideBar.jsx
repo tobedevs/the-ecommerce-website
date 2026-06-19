@@ -21,7 +21,6 @@ export function SideBar({ onClose, isOpen }) {
   };
 
   useEffect(() => {
-    // This runs every time cart changes
     setIsItemAdded(cart.length > 0);
   }, [cart]);
 
@@ -43,7 +42,7 @@ export function SideBar({ onClose, isOpen }) {
 
           <button onClick={onClose} className="cursor-pointer">
             <img
-              src="./X (1).svg"
+              src="/my-e-commerce-website/X (1).svg"
               className="w-4 h-4 bg-[#BABABA]/50 border-0 rounded-full"
             />
           </button>
@@ -120,7 +119,7 @@ export function SideBar({ onClose, isOpen }) {
                       remove(item.id, item.color, item.sizes)
                     }}
                       className="cursor-pointer absolute sm:right-[10%] right-0 bottom-3 p-2 text-gray-500 hover:text-red-600 transition-colors">
-                      <img src="./Vector (1).svg" alt="" className="w-5 h-5" />
+                      <img src="/my-e-commerce-website/Vector (1).svg" alt="" className="w-5 h-5" />
                     </button>
 
                   </div>
